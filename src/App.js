@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NewsList from './components/NewsList';
 import NewsCarousel from './components/NewsCarousel';
-
+import EconomicNewsFeed from './components/EconomicNewsFeed';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   const [articles, setArticles] = useState([]);
@@ -27,9 +28,11 @@ function App() {
 
   return (
     <div className="container-fluid">
-      <h1>Financial News Feed</h1>
-      <div className="row">
-        <div className="col-md-9">
+      <div className="row mt-4">
+        <div className="col-md-3">
+          <EconomicNewsFeed articles={articles} />
+        </div>
+        <div className="col-md-6">
           <NewsCarousel articles={articles.filter(article => article.image)} />
         </div>
         <div className="col-md-3">

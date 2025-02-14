@@ -1,0 +1,90 @@
+/* src/components/EconomicNewsFeed.css */
+.economic-news-feed {
+    padding: 20px;
+}
+
+.search-bar {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.news-item {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+}
+
+.news-thumbnail {
+    flex: 1;
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.news-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.news-content {
+    flex: 3;
+}
+
+.news-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.news-title a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.news-title a:hover {
+    text-decoration: underline;
+}
+
+.news-summary {
+    color: #6c757d;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    padding: 5px 10px;
+}
+
+.no-results {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.page-item {
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.page-item.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
